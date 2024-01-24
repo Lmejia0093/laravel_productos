@@ -18,6 +18,9 @@
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
+
+</head>
+<body>
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
         
         <a class="navbar-brand" href="{{ url('/') }}">
@@ -36,7 +39,7 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('index.page1') }}">Page1</a>
+                    <i class="bi bi-file"></i>  <a class="nav-link" href="{{ route('index.page1') }}">Page1</a>
                 </li>
                 <!-- Authentication Links -->
                 @guest
@@ -74,16 +77,15 @@
         </div>
     </div>
 </nav>
-</head>
-<body>
-
      
       
-        <div class="container">
-            
-        <main class="py-4">
+        <main>
             @yield('content')
         </main>
-        </div>
+            
+      
+    
+       
+       
 </body>
 </html>

@@ -43,28 +43,7 @@
              
                    
                   
-<form action="#" method="post">
-    <label for="" class="form-label">Email</label>
-    <input
-        type="email"
-        class="form-control"
-        name=""
-        id=""
-     
-        placeholder="abc@mail.com"
-    />
-    <label for="" class="form-label">Clave</label>
-    <input
-        type="text"
-        class="form-control"
-        name=""
-        id=""
-        placeholder="Ingresa tu clave"
-    />
-
-  
-
-</form>
+             
             
                   
                  
