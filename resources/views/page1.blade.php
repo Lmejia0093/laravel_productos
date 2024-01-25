@@ -76,11 +76,12 @@
                         <div class="col-6">
                             <ul>
                                 <li> {{ $producto->nombre }}    </li>
+                          
                               
                             </ul>
                         </div>
                         <div class="col-3">
-                            <input class="btn btn-success" type="button" value="edit">
+                            <input class="btn btn-success" type="button" value="     ">
                         </div>
                     </div>
                       

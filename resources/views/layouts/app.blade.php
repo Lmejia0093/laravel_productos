@@ -39,7 +39,7 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <i class="bi bi-file"></i>  <a class="nav-link" href="{{ route('index.page1') }}">Page1</a>
+                    <i class="bi bi-receipt"></i> <a class="nav-link" href="{{ route('index.page1') }}">Page1</a>
                 </li>
                 <!-- Authentication Links -->
                 @guest
