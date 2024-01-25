@@ -39,7 +39,7 @@
                     @auth
                     <i class="bi bi-house btn btn-success btn-sm">
                       
-                        <a href="{{ url('/home') }}" class=" text-sm text-white-700 dark:text-gray-500 underline">Home</a>
+                        <a href="{{ url('/home') }}" class=" text-sm text-white-700 dark:text-gray-500 underline">Dashboard</a>
                     </i>
                     @else
                     <i class="bi bi-box-arrow-in-right btn btn-primary btn-sm">
