@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>APP-B</title>
 
         <!-- Fonts -->
         <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -31,9 +31,9 @@
    
     </head>
     <body >
-        <i class="bi bi-bag-heart-fill">aqui</i>
+      
      
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+        <div class="relative flex items-top justify-center  bg-gray-100 dark:bg-gray-900 sm:items-center">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -52,98 +52,33 @@
                     @endauth
                 </div>
             @endif
-            <h1>Bienvenido a pagina principal</h1>
+           
 
-            <section id="pricing" class="pricing">
-                <div class="container" data-aos="fade-up">
-          
-                  <div class="section-header">
-                    <h2>Our Pricing</h2><i class="bi bi-airplane-engines"></i>
-                    <p>Architecto nobis eos vel nam quidem vitae temporibus voluptates qui hic deserunt iusto omnis nam voluptas asperiores sequi tenetur dolores incidunt enim voluptatem magnam cumque fuga.</p>
-                  </div>
-          
-                  <div class="row gy-4">
-          
-                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
-                      <div class="pricing-item">
-          
-                        <div class="pricing-header">
-                          <h3>Free Plan</h3>
-                          <h4><sup>$</sup>0<span> / month</span></h4>
-                        </div>
-          
-                        <ul>
-                          <li><i class="bi bi-dot"></i> <span>Quam adipiscing vitae proin</span></li>
-                          <li><i class="bi bi-dot"></i> <span>Nec feugiat nisl pretium</span></li>
-                          <li><i class="bi bi-dot"></i> <span>Nulla at volutpat diam uteera</span></li>
-                          <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
-                          <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        </ul>
-          
-                        <div class="text-center mt-auto">
-                          <a href="#" class="buy-btn">Buy Now</a>
-                        </div>
-          
-                      </div>
-                    </div><!-- End Pricing Item -->
-          
-                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="400">
-                      <div class="pricing-item featured">
-          
-                        <div class="pricing-header">
-                          <h3>Business Plan</h3>
-                          <h4><sup>$</sup>29<span> / month</span></h4>
-                        </div>
-          
-                        <ul>
-                          <li><i class="bi bi-dot"></i> <span>Quam adipiscing vitae proin</span></li>
-                          <li><i class="bi bi-dot"></i> <span>Nec feugiat nisl pretium</span></li>
-                          <li><i class="bi bi-dot"></i> <span>Nulla at volutpat diam uteera</spa>
-                          </li>
-                          <li><i class="bi bi-dot"></i> <span>Pharetra massa massa ultricies</spa>
-                          </li>
-                          <li><i class="bi bi-dot"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        </ul>
-          
-                        <div class="text-center mt-auto">
-                          <a href="#" class="buy-btn">Buy Now</a>
-                        </div>
-          
-                      </div>
-                    </div><!-- End Pricing Item -->
-          
-                    <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="600">
-                      <div class="pricing-item">
-          
-                        <div class="pricing-header">
-                          <h3>Developer Plan</h3>
-                          <h4><sup>$</sup>49<span> / month</span></h4>
-                        </div>
-          
-                        <ul>
-                          <li><i class="bi bi-dot"></i> <span>Quam adipiscing vitae proin</span></li>
-                          <li><i class="bi bi-dot"></i> <span>Nec feugiat nisl pretium</span></li>
-                          <li><i class="bi bi-dot"></i> <span>Nulla at volutpat diam uteera</span></li>
-                          <li><i class="bi bi-dot"></i> <span>Pharetra massa massa ultricies</span></li>
-                          <li><i class="bi bi-dot"></i> <span>Massa ultricies mi quis hendrerit</span></li>
-                        </ul>
-          
-                        <div class="text-center mt-auto">
-                          <a href="#" class="buy-btn">Buy Now</a>
-                        </div>
-          
-                      </div>
-                    </div><!-- End Pricing Item -->
-          
-                  </div>
-          
-                </div>
-              </section><!-- End Pricing Section -->
-         
-        </div>
+           
+       
       
-
-   
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{{ asset('img/imagen1.jpg') }}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ asset('img/imagen2.jpg') }}" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="{{ asset('img/imagen3.jpg') }}" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
          
     </body>
 </html>
