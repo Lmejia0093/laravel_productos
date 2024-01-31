@@ -19,7 +19,7 @@
                     @endforeach
                 </div>
 
-                
+
 
             </div>
 
@@ -38,7 +38,7 @@
                     @endforeach
                 </div>
 
-                
+
 
             </div>
 
@@ -58,7 +58,7 @@
                     @endforeach
                 </div>
 
-                
+
 
             </div>
 
@@ -72,29 +72,28 @@
                         <p class="card-text">{{ $cantidad }}</p>
                     </div>
                     @foreach ($productos as $producto)
-                    <div class="row">
-                        <div class="col-6">
-                            <ul>
-                                <li> {{ $producto->nombre }}    </li>
-                          
-                              
-                            </ul>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul>
+                                    <li> {{ $producto->nombre }} </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="col-3">
+                                <input class="btn btn-success" type="button" value="     ">
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <input class="btn btn-success" type="button" value="     ">
-                        </div>
-                    </div>
-                      
                     @endforeach
                 </div>
 
-                
+
 
             </div>
-    
+
         </div>
 
-        
+
 
 
     </div>

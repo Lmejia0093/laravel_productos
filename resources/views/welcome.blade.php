@@ -33,7 +33,7 @@
     <body >
       
      
-        <div class="relative flex items-top justify-center  bg-gray-100 dark:bg-gray-900 sm:items-center">
+    
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
                     @auth
@@ -55,30 +55,7 @@
            
 
            
-       
-      
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="{{ asset('img/imagen1.jpg') }}" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="{{ asset('img/imagen2.jpg') }}" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="{{ asset('img/imagen3.jpg') }}" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+        
          
     </body>
 </html>
