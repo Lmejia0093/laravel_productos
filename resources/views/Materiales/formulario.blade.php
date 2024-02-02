@@ -4,11 +4,11 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-3">
+           
 
                 <h4 class="card-title">Paso 1 Llena de Formulario</h4>
 
-                <div class="mb-3">
+                <div class="mb-12">
                     <label for="" class="form-label">Categoria</label>
                     <select
                         class="form-select form-select-lg"
@@ -23,13 +23,13 @@
                 </div>
                 
                     
-                <div class="mb-3">
+                <div class="mb-12">
                     <label for="" class="form-label">Materiales</label>
                     <input
                         type="text"
                         class="form-control"
-                        name=""
-                        id=""
+                        name="codmateriales"
+                        id="codmateriales"
                         aria-describedby="helpId"
                         placeholder=""
                     />
@@ -38,12 +38,18 @@
                 
                 
 
-                <button class="btn btn-success bg-warning text-primary"><a
-                        href="{{ route('materiales.formulario2') }}">Siguiente</a></button>
+                <button type="submit" class="btn btn-success bg-warning text-primary"" <a
+                        href="{{ route('materiales.formulario2') }}" >Siguiente</a></button>
 
+                
 
-
-            </div>
+           
         </div>
+        <script>
+
+        
+                
+        </script>
     </div>
 @endsection
+

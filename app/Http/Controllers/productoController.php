@@ -10,7 +10,7 @@ class productoController extends Controller
 {
   public function __construct()
   {
-    $this->middleware('auth');
+  //  $this->middleware('auth');
   }
   //
 
@@ -18,12 +18,32 @@ class productoController extends Controller
   public function index()
   {
 
-    $cantidadBuscar = '04047';
-    $cantidad = Producto::count();
-    //  $productos = Producto::where('categoria','c')->get();
-    //  $productos = Producto::all();
-    $productos = Producto::Where('nombre', 'LIKE', $cantidadBuscar);
-    return view('Materiales.home', compact('cantidad', 'productos'));
+    $cantidadBuscar = 'hilo white';
+    $cantidad = Producto::Where('nombre', 'hilo white')->count();
+    $cantidadCategoriaTela = Producto::Where('categoria','tela')->count();
+    $cantidadCategoriaHilos = Producto::Where('categoria','hilo')->count();
+    $productoTelas = Producto::where('categoria','tela')->get();
+    $productoHilos = Producto::where('categoria','hilo')->get();
+     // $productos = Producto::all();
+   // $productos = Producto::Where('nombre', 'LIKE', $cantidadBuscar);
+   return view('Materiales.home', compact('cantidad','cantidadCategoriaTela','productoTelas','productoHilos','cantidadCategoriaHilos'));
+ //  return response()->json($productos,200);
+  }
+
+  public function destroy($id){
+
+$producto = Producto::find($id);
+//$producto = $id;
+if ($producto){
+ // $producto->delete();
+  return   redirect()->route('Materiales.homeDelete',compact('producto'));
+}
+return  redirect()->back();
+
+
+
+     //return view('materiales.homeDelete');
+ 
   }
 
 public function formulario2(){
@@ -39,6 +59,12 @@ public function formulario3(){
 
 return view('Materiales.formulario');
 
+
+ }
+
+ public function edit(){
+
  }
 
 }
+
