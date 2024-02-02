@@ -17,16 +17,10 @@
 @endsection
 @section('content')
     <div class="container">
-       
+        <button class="btn btn-success" type="submit"> <a href="{{ route()}}"></a>Ingresar</button>
         <div class="row">
-            <button class="btn btn-success" type="submit">Ingresar</button>
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
-
-
-
-
-
-
+           
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 
 
