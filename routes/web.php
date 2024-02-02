@@ -9,11 +9,12 @@ Route::get('/', function () {
 });
 
 Route::get('/index',[productoController::class,'index'])->name('page.index');
-Route::Delete('/index.eliminar/{id}',[productoController::class,'destroy'])->name('page.destroy');
+
 //Route::put('/index.edit/{id}',[productoController::class,'edit'])->name('page.edit');
 
 Auth::routes();
 
+Route::delete('/indexEliminar/{id}',[productoController::class,'destroy'])->name('page.destroy');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/index',[productoController::class,'index'])->name('index.page1');
 Route::get('/ingresoMateriales',[productoController::class,'store'])->name('materiales.formulario');
