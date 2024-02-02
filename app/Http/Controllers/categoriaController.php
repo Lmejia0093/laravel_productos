@@ -27,12 +27,11 @@ class categoriaController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'categoria' => 'required',
-            'nombre' => 'required ',
-            'cantidad' => 'required'
-          ]);
-          Producto::create($request->all());
+        $productos = new Producto();
+        $productos->categoria = $request->input('categoria');
+        $productos->nombre = $request->input('nombre');
+        $productos->cantidad = $request->input('cantidad');
+        $productos->save();;
           return redirect()->route('index.page1');
          
     }
