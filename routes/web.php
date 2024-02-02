@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\categoriaController;
 use App\Http\Controllers\productoController;
 use Illuminate\Support\Facades\Route;
 
@@ -10,7 +11,8 @@ Route::get('/', function () {
 
 Route::get('/index',[productoController::class,'index'])->name('page.index');
 Route::delete('/indexEliminar/{id}',[productoController::class,'destroy'])->name('page.destroy');
-Route::get('/categoriaNew',[productoController::class,'index'])->name('categoriaNew');
+Route::get('/categoriaNew',[categoriaController::class,'index'])->name('categoriaNew');
+Route::post('/categoriaStore',[categoriaController::class,'store'])->name('categoriaStore');
 //Route::put('/index.edit/{id}',[productoController::class,'edit'])->name('page.edit');
 
 Auth::routes();

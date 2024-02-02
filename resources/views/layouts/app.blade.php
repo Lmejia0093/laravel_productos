@@ -54,7 +54,7 @@
                     @endif
                 @else
                 <li class="nav-item">
-                    <i class="bi bi-receipt"></i> <a class="nav-link" href="{{ route('index.page1') }}">Page1</a>
+                    <i class="bi bi-receipt"></i> <a class="nav-link" href="{{ route('index.page1') }}">Materiales categoria</a>
               
                     
                 </li>

@@ -3,23 +3,25 @@
 @section('js')
     <script>
         /**
-    document.querySelectorAll('.boton-guardar').forEach(button => {
-        button.addEventListener('click', function (event) {
-       const btnvalor =  document.getElemntByid('boton-guardar').value;
-            event.preventDefault();
+            document.querySelectorAll('.boton-guardar').forEach(button => {
+                button.addEventListener('click', function (event) {
+               const btnvalor =  document.getElemntByid('boton-guardar').value;
+                    event.preventDefault();
 
-            console.log('llego hasta aqui');
-            console.log(btnvalor);
-        });
-    });
-    **/
+                    console.log('llego hasta aqui');
+                    console.log(btnvalor);
+                });
+            });
+            **/
     </script>
 @endsection
 @section('content')
     <div class="container">
-        <button class="btn btn-success" type="submit"> <a href="{{ route()}}"></a>Ingresar</button>
+
+        <button class="btn btn-outline-primary" type="submit"><a href="{{ route('categoriaNew') }}">Nuevo Registro</a></button>
+       
         <div class="row">
-           
+
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 
@@ -34,14 +36,14 @@
                     <table class="table " <thead>
                         <tr>
                             <th ">categoria</th>
-                                            <th ">nombre</th>
+                                                    <th ">nombre</th>
                             <th ">cantidad</th>
-                                            <th ">Eliminar</th>
+                                                    <th ">Eliminar</th>
                             <th ">Editar</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                               @foreach ($productoHilos as $productoHilo)
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                    @foreach ($productoHilos as     $productoHilo)
                         <tr>
                             <td>{{ $productoHilo->categoria }} </td>
                             <td>{{ $productoHilo->nombre }} </td>
@@ -107,7 +109,7 @@
 
 
             </div>
-        
+
 
         </div>
 

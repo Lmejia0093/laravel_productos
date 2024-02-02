@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Categoria;
+use App\Models\Producto;
 use Illuminate\Http\Request;
 
 class categoriaController extends Controller
@@ -13,7 +15,8 @@ class categoriaController extends Controller
      */
     public function index()
     {
-        
+        $categorias = Categoria::all();
+        return view('Materiales.homeForm',compact('categorias'));
     }
 
     /**
@@ -24,7 +27,14 @@ class categoriaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'categoria' => 'required',
+            'nombre' => 'required ',
+            'cantidad' => 'required'
+          ]);
+          Producto::create($request->all());
+          return redirect()->route('index.page1');
+         
     }
 
     /**

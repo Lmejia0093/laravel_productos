@@ -19,34 +19,47 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
-
+<form action="{{ route('categoriaStore')}}" method="post">
+    @csrf
                 <div class="mb-3">
 
                     <label for="" class="form-label">Categoria</label>
-                    <select class="form-select form-select-lg" name="" id="">
+                    <select class="form-select form-select-lg" name="categoria" id="categoria">
                         <option selected>---Seleccionar--</option>
-                        <option>JERSEY</option>
-                        <option>FELT</option>
-                        <option>CANVAS</option>
-                        <option>HILOS</option>
+                        @foreach ($categorias as $categoria )
+                            
+                        <option>{{ $categoria->nombre }}</option>
+                        @endforeach
+                        
 
 
                     </select>
-
-
                 </div>
+              <div class="mb-3">
+                <label for="" class="form-label">nombre</label>
+                <input
+                    type="text"
+                    class="form-control"
+                    name="nombre"
+                    id="nombre"
+                    aria-describedby="helpId"
+                    placeholder=""
+                />
+                <small id="helpId" class="form-text text-muted">Digita el nombre</small>
+              </div>
+              
+               
+
+              
                 <div class="mb-3">
                     <label for="" class="form-label">Cantidad</label>
-                    <input type="number" class="form-control" name="" id="" aria-describedby="helpId"
+                    <input type="number" class="form-control" name="cantidad" id="cantidad" aria-describedby="helpId"
                         placeholder="0000" />
                     <small id="helpId" class="form-text text-muted">La cantidad a ingresar</small>
                 </div>
 
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </div>
-
+               <button type="submit">Ingresar</button>
+            </form>
             </div>
         </div>
     </div>
