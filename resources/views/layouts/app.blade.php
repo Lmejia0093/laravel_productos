@@ -54,6 +54,11 @@
                     @endif
                 @else
                 <li class="nav-item">
+                    <i class="bi bi-receipt"></i> <a class="nav-link" href="{{ route('Hoja.Sam') }}">Hoja SAM</a>
+              
+                    
+                </li>
+                <li class="nav-item">
                     <i class="bi bi-receipt"></i> <a class="nav-link" href="{{ route('index.page1') }}">Materiales categoria</a>
               
                     

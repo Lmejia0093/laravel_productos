@@ -102,6 +102,6 @@
 
         </div>   
     </div>
-         <h2>bienvenido</h2>
+         <h2>Bienvendio a Sistema</h2>
     </body>
 </html>
